@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Run dev server"
+set -euxo pipefail
+
+overmind start

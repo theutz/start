@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Start sanic server"
+set -euxo pipefail
+
+uv run sanic src.app.server
