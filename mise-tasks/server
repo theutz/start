@@ -2,4 +2,4 @@
 #MISE description="Start sanic server"
 set -euxo pipefail
 
-uv run sanic src.app.server
+uv run sanic src.app.server --auto-reload --dev

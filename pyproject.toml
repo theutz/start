@@ -6,5 +6,5 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "jinja2>=3.1.6",
-    "sanic>=25.3.0",
+    "sanic[ext]>=25.3.0",
 ]

@@ -1,0 +1,15 @@
+{# vim: ft=htmljinja -#}
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <!-- if development -->
+    <script type="module" src="http://localhost:5173/@vite/client"></script>
+    <script type="module" src="http://localhost:5173/src/js/main.js"></script>
+  </head>
+  <body>
+    <div x-data="{ title: '{{ title }}' }">
+      <h1 x-text="title"></h1>
+      <p @click="title = title == '{{ title }}' ? 'boo' : '{{ title }}'">Hello</p>
+    </div>
+  </body>
+</html>
